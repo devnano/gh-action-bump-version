@@ -240,7 +240,7 @@ const pkg = getPackageJson();
       );
     }
 
-    const remoteRepo = `https://${process.env.GITHUB_ACTOR}:${process.env['INPUT_GITHUB-TOKEN']}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
+    const remoteRepo = `https://albolocura:${process.env['INPUT_GITHUB-TOKEN']}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
     console.log(remoteRepo);
     if (process.env['INPUT_SKIP-TAG'] !== 'true') {
       await runInWorkspace('git', ['tag', newVersion]);
