@@ -78,6 +78,10 @@ inputs:
     description: '[DEPRECATED] Set to false to skip pushing the new tag'
     default: 'true'
     required: false
+  github-token:
+    description: 'Override github token'
+    default: ''
+    required: false
 outputs:
   newTag:
     description: 'The newly created tag'
